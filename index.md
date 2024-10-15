@@ -11,6 +11,8 @@ layout: default
 
 * [Version control repository](https://github.com/l-hanson-dev/ENG1-UniSim)
 * [(Website) version control repository](https://github.com/l-hanson-dev/ENG1-UniSim-website)
+* PDF's
+    * [Architecture_notes_EXAMPLE_DRAFT](/media/deliverables/Architecture_notes_EXAMPLE_DRAFTpdf.pdf)
 
 | Deliverable                             | Max. mark | Page limit    | File name and format   |
 |-----------------------------------------|-----------|---------------|------------------------|
