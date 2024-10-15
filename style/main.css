@@ -17,7 +17,7 @@ h1, h2, h3, h4 {
   opacity: 0.8;
 }
 
-p, ul, li {
+p, ul:not(ul ul) {
   font-family: 'Source Sans Pro', sans-serif;
   opacity: 0.8;
 }
@@ -141,12 +141,12 @@ a:active {
 }
 
 a:link{
-  opacity: .7;
+  /* opacity: .7; */
   color:#00ffff;
 }
 
 a:visited{
-  opacity: .5;
+  /* opacity: .5; */
   color:#00ffff;
 }
 
@@ -211,17 +211,17 @@ table {
 }
 
 table, th, td {
-  border: 1px solid #dddddd; /* Adds border to table, headers, and cells */
+  border: 1px solid #9b9b9b; /* Adds border to table, headers, and cells */
   padding: 8px;
 }
 
 th {
-  background-color: #f2f2f2; /* Adds shading to table headers */
+  background-color: #171717; /* Adds shading to table headers */
   text-align: left; /* Aligns header text to the left */
 }
 
 tr:nth-child(even) {
-  background-color: #f9f9f9; /* Adds slight background color to even rows */
+  background-color: #00000040; /* Adds slight background color to even rows */
 }
 
 td {
