@@ -8,7 +8,7 @@ To get started with running Jekyll, just follow the instructions on their websit
 
 ## Production site
 
-Everything in the ```_site``` folder when built on your local machine is periodically uploaded to [eng1.realjamesh.co.uk](https://eng1.realjamesh.co.uk) which has the login credientials ```user:pass```
+The files in the ```_site``` folder on your local machine are periodically uploaded to eng1.realjamesh.co.uk (login credentials: ```user:pass```). The website is rendered and displayed at [eng1.realjamesh.co.uk](https://eng1.realjamesh.co.uk), but only after changes have been pushed to the main branch. Please note that updates may take up to a few days to reflect on the live site.
 
 ## PDF's and other files
 

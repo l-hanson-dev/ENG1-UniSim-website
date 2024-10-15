@@ -204,6 +204,31 @@ pre {
   font-size: small;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures borders don't double up */
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 1px solid #dddddd; /* Adds border to table, headers, and cells */
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2; /* Adds shading to table headers */
+  text-align: left; /* Aligns header text to the left */
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* Adds slight background color to even rows */
+}
+
+td {
+  text-align: left; /* Ensures all cell content is left-aligned */
+}
+
+
 /* Tablet kinda adjustments */
 @media screen and (max-width: 910px) {
     #mainContent {
