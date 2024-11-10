@@ -71,27 +71,48 @@ export default function Root() {
   
   <ul className="list-disc pl-6 mb-6 space-y-2">
     <li>
-      <a href="https://github.com/l-hanson-dev/ENG1-UniSim" 
-         className="text-blue-600 dark:text-blue-400 hover:underline">
-        Version control repository
-      </a>
-    </li>
-    <li>
-      <a href="https://github.com/l-hanson-dev/ENG1-UniSim-website"
-         className="text-blue-600 dark:text-blue-400 hover:underline">
-        (Website) version control repository
-      </a>
-    </li>
-    <li>
       PDF's
       <ul className="list-disc pl-6 mt-2">
         <li>
-          <a href="/media/deliverables/Architecture_notes_EXAMPLE_DRAFTpdf.pdf"
+          <a href="/media/deliverables/Req1.pdf"
              className="text-blue-600 dark:text-blue-400 hover:underline">
-            Architecture_notes_EXAMPLE_DRAFT
+            Requirements
+          </a>
+        </li>
+        <li>
+          <a href="/media/deliverables/Arch1.pdf"
+             className="text-blue-600 dark:text-blue-400 hover:underline">
+            Architecture
+          </a>
+        </li>
+        <li>
+          <a href="/media/deliverables/Plan1.pdf"
+             className="text-blue-600 dark:text-blue-400 hover:underline">
+            Method selection and planning
+          </a>
+        </li>
+        <li>
+          <a href="/media/deliverables/Risk1.pdf"
+             className="text-blue-600 dark:text-blue-400 hover:underline">
+            Risk assessment and mitigation
+          </a>
+        </li>
+        <li>
+          <a href="/media/deliverables/Impl1.pdf"
+             className="text-blue-600 dark:text-blue-400 hover:underline">
+            Implementation
           </a>
         </li>
       </ul>
+    </li>
+    <li>
+    <a href="https://github.com/l-hanson-dev/ENG1-UniSim"
+         className="text-blue-600 dark:text-blue-400 hover:underline">
+        Code version control repository
+      </a>
+    </li>
+    <li>
+      Executable JAR
     </li>
   </ul>
 
@@ -110,7 +131,12 @@ export default function Root() {
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">1. Website (submit only the URL)</td>
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">3</td>
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">—</td>
-          <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">url1.txt</td>
+          <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
+            <a href="/media/deliverables/url1.txt" 
+               className="text-blue-600 dark:text-blue-400 hover:underline">
+              url1.txt
+            </a>
+          </td>
         </tr>
         <tr className="bg-gray-50 dark:bg-gray-800">
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">2. Requirements</td>
@@ -122,19 +148,31 @@ export default function Root() {
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">3. Architecture</td>
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">22</td>
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">6</td>
-          <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Arch1.pdf</td>
+          <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
+            Arch1.pdf 
+          </td>
         </tr>
         <tr className="bg-gray-50 dark:bg-gray-800">
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">4. Method selection and planning</td>
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">10</td>
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">2 + 1</td>
-          <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Plan1.pdf</td>
+          <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
+          <a href="/media/deliverables/Plan1.pdf" 
+               className="text-blue-600 dark:text-blue-400 hover:underline">
+              Plan1.pdf
+            </a>
+          </td>
         </tr>
         <tr className="dark:bg-gray-900">
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">5. Risk assessment and mitigation</td>
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">10</td>
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">1 + 3</td>
-          <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Risk1.pdf</td>
+          <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
+            <a href="/media/deliverables/Risk1.pdf" 
+               className="text-blue-600 dark:text-blue-400 hover:underline">
+              Risk1.pdf
+            </a>
+          </td>
         </tr>
         <tr className="bg-gray-50 dark:bg-gray-800">
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">6. Implementation</td>
@@ -162,7 +200,7 @@ export default function Root() {
 
           <footer className="mt-16 pb-8 flex justify-center items-center space-x-2">
             <a 
-              href="https://github.com/l-hanson-dev/ENG1-UniSim"
+              href="https://github.com/l-hanson-dev/ENG1-UniSim-website"
               className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"
               aria-label="View source on GitHub"
             >
@@ -171,7 +209,7 @@ export default function Root() {
                 alt="GitHub" 
                 className="w-8 h-8 dark:invert"
               />
-              <span>View source on GitHub</span>
+              <span>View website source on GitHub</span>
             </a>
           </footer>
 

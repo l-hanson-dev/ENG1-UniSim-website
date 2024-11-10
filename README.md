@@ -76,7 +76,7 @@ UniSim-website/
 
 ## Additional Notes
 
-- The site uses TailwindCSS for styling (Currently very broken)
+- The site uses TailwindCSS for styling
 - Dark mode support is included
 - React Router handles navigation
 - The development server supports hot reloading
