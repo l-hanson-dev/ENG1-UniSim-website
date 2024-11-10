@@ -68,6 +68,11 @@ export default function Root() {
 
 <section className="mb-8">
   <h2 className="text-2xl font-semibold mb-4">Deliverables</h2>
+
+  <a className="text-blue-600 dark:text-blue-400 hover:underline" 
+  href="/media/Spec.pdf">
+    Specification and mark breakdown of the project
+  </a>
   
   <ul className="list-disc pl-6 mb-6 space-y-2">
     <li>
@@ -155,7 +160,7 @@ export default function Root() {
         <tr className="bg-gray-50 dark:bg-gray-800">
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">4. Method selection and planning</td>
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">10</td>
-          <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">2 + 1</td>
+          <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">2 + 1 + 2</td>
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
           <a href="/media/deliverables/Plan1.pdf" 
                className="text-blue-600 dark:text-blue-400 hover:underline">
@@ -178,7 +183,11 @@ export default function Root() {
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">6. Implementation</td>
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">25</td>
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">1</td>
-          <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Impl1.pdf + Code + Executable JAR</td>
+          <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Impl1.pdf + <a 
+            href="https://github.com/l-hanson-dev/ENG1-UniSim"
+            className="text-blue-600 dark:text-blue-400 hover:underline">
+              Code
+            </a> + Executable JAR</td>
         </tr>
         </tbody>
     </table>
