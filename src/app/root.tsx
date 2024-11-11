@@ -257,11 +257,11 @@ export default function Root() {
               className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"
               aria-label="View source on GitHub"
             >
-              <img 
+              {/* <img 
                 src="/icons/GitHub-Mark-32px.png" 
                 alt="GitHub" 
                 className="w-8 h-8 dark:invert"
-              />
+              /> */}
               <span>View website source on GitHub</span>
             </a>
           </footer>
