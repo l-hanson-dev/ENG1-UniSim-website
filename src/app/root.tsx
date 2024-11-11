@@ -73,11 +73,6 @@ export default function Root() {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Deliverables</h2>
 
-              <a className="text-blue-600 dark:text-blue-400 hover:underline"
-                href="/media/Spec.pdf">
-                Specification and mark breakdown of the project
-              </a>
-
               <ul className="list-disc pl-6 mb-6 space-y-2">
                 <li>
                   PDF's
@@ -186,7 +181,7 @@ export default function Root() {
                       <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
                         <a href="/media/deliverables/Arch1.pdf"
                           className="text-blue-600 dark:text-blue-400 hover:underline">
-                          Arch1.pdf (not done)
+                          Arch1.pdf
                         </a>
                       </td>
                     </tr>
