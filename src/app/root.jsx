@@ -117,7 +117,28 @@ export default function Root() {
       </a>
     </li>
     <li>
-      Executable JAR
+      <a href="/media/deliverables/UniSim.jar"
+         className="text-blue-600 dark:text-blue-400 hover:underline">
+        Executable JAR
+      </a>
+      <br />
+      Run UniSim.jar with JDK 17:
+      <div className="block bg-gray-100 dark:bg-gray-800 p-4 rounded-lg relative mt-2" style={{ width: '230px' }}>
+        <pre className="whitespace-pre-wrap">
+          <code className="text-sm text-gray-800 dark:text-gray-200">
+            java -jar UniSim.jar
+          </code>
+        </pre>
+        <button
+          onClick={() => {
+            navigator.clipboard.writeText('java -jar UniSim.jar');
+            alert('Copied to clipboard!');
+          }}
+          className="absolute top-1/2 transform -translate-y-1/2 right-2 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 p-1 rounded text-xs"
+        >
+          Copy
+        </button>
+      </div>
     </li>
   </ul>
 
@@ -147,14 +168,22 @@ export default function Root() {
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">2. Requirements</td>
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">20</td>
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">1 + 3</td>
-          <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Req1.pdf</td>
+          <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
+          <a href="/media/deliverables/Req1.pdf" 
+               className="text-blue-600 dark:text-blue-400 hover:underline">
+              Req1.pdf (not done)
+            </a>
+          </td>
         </tr>
         <tr className="dark:bg-gray-900">
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">3. Architecture</td>
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">22</td>
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">6</td>
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
-            Arch1.pdf 
+          <a href="/media/deliverables/Arch1.pdf" 
+               className="text-blue-600 dark:text-blue-400 hover:underline">
+              Arch1.pdf (not done)
+            </a>
           </td>
         </tr>
         <tr className="bg-gray-50 dark:bg-gray-800">
@@ -183,11 +212,22 @@ export default function Root() {
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">6. Implementation</td>
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">25</td>
           <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">1</td>
-          <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Impl1.pdf + <a 
+          <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">
+          <a 
+            href="/media/deliverables/Impl1.pdf"
+            className="text-blue-600 dark:text-blue-400 hover:underline">
+              Impl1.pdf
+            </a> + <a 
             href="https://github.com/l-hanson-dev/ENG1-UniSim"
             className="text-blue-600 dark:text-blue-400 hover:underline">
               Code
-            </a> + Executable JAR</td>
+            </a> + 
+            <a 
+            href="/media/deliverables/UniSim.jar"
+            className="text-blue-600 dark:text-blue-400 hover:underline">
+              Executable JAR
+            </a>
+            </td>
         </tr>
         </tbody>
     </table>
