@@ -1,9 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, ReactNode } from "react";
 import { Moon, Sun } from "lucide-react";
 import { Outlet } from "react-router-dom";
 
-function ClientOnly({ children }) {
-  const [mounted, setMounted] = useState(false);
+interface ClientOnlyProps {
+  children: ReactNode;
+}
+
+function ClientOnly({ children }: ClientOnlyProps) {
+  const [mounted, setMounted] = useState<boolean>(false);
 
   useEffect(() => {
     setMounted(true);
@@ -13,16 +17,16 @@ function ClientOnly({ children }) {
 }
 
 function ThemeToggle() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') || 
       (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    setTheme(savedTheme);
+    setTheme(savedTheme as 'light' | 'dark');
     document.documentElement.classList.add(savedTheme);
   }, []);
 
-  const toggleTheme = () => {
+  const toggleTheme = (): void => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
     localStorage.setItem('theme', newTheme);
