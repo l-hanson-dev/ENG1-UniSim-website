@@ -59,11 +59,11 @@ UniSim-website/
 ├── src/                # Source files
 │   ├── app/           # React components
 │   ├── styles/        # CSS files
-│   └── main.jsx       # Entry point
+│   └── main.tsx       # Entry point
 ├── public/            # Static assets
 ├── index.html         # HTML template
-├── vite.config.js     # Vite configuration
-├── tailwind.config.js # Tailwind configuration
+├── vite.config.ts     # Vite configuration
+├── tailwind.config.ts # Tailwind configuration
 └── package.json       # Project dependencies
 ```
 
