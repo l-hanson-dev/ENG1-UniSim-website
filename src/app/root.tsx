@@ -68,7 +68,7 @@ export default function Root() {
           </div>
           */}
 
-          <h1 className="text-4xl font-bold mb-8">UniSim</h1>
+          <h1 className="text-4xl font-bold mb-8 mt-8">UniSim</h1>
 
 <section className="mb-8">
   <h2 className="text-2xl font-semibold mb-4">Deliverables</h2>
@@ -126,7 +126,7 @@ export default function Root() {
         Executable JAR
       </a>
       <br />
-      Run UniSim.jar with JDK 17:
+      UniSim.jar must be run with JDK 17 as follows:
       <div className="block bg-gray-100 dark:bg-gray-800 p-4 rounded-lg relative mt-2" style={{ width: '230px' }}>
         <pre className="whitespace-pre-wrap">
           <code className="text-sm text-gray-800 dark:text-gray-200">
@@ -237,7 +237,7 @@ export default function Root() {
     </table>
   </div>
 </section>
-
+{/*
 <section className="mb-8">
   <h2 className="text-2xl font-semibold mb-4">
     Website requirements <span className="text-gray-600 dark:text-gray-400">[3 marks]</span>
@@ -249,9 +249,10 @@ export default function Root() {
     <li>In this deliverable, it is the website structure that is marked. You will be penalised if material is not easily locatable and accessible.</li>
   </ol>
 </section>
+*/}
           </section>
 
-          <footer className="mt-16 pb-8 flex justify-center items-center space-x-2">
+          <footer className="mt-4 pb-8 flex justify-center items-center space-x-2">
             <a 
               href="https://github.com/l-hanson-dev/ENG1-UniSim-website"
               className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-200"
